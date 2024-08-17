@@ -1,4 +1,4 @@
-const createdImg = document.createElement("img");
+let createdImg ;
 const images = [
     {
       url: "<https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260>",
@@ -13,3 +13,16 @@ const images = [
       alt: "Group of Horses Running",
     },
   ];
+
+
+const gallery = document.getElementsByClassName("gallery");
+
+for(const imagepart of images){
+  const createdLi= document.createElement("li");
+  const createdImg =document.createElement("img");
+
+  createdImg.setAttribute("src",imagepart.url);
+  createdImg.setAttribute("alt",imagepart.alt)
+  
+  createdLi.append(createdImg);
+}
