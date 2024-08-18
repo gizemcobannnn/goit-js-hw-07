@@ -1,8 +1,9 @@
 body{
     display: flex;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    gap: 2em;
 }
 .gallery{
     display: flex;
@@ -12,6 +13,7 @@ body{
     margin: 0;
     padding: 0;
     gap: 10px;
+    max-width: 60%;
 }
 .gallery li {
     flex: 1 1 calc(33.333% - 20px); /* Üç sütun düzeni */
@@ -23,4 +25,8 @@ body{
     height: auto;
     display: block;
     border-radius: 8px; 
+}
+
+input#name-input{
+    max-width: 30%;
 }
