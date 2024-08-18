@@ -24,8 +24,6 @@ const images = [
     
     createdImg.src = imagepart.url;
     createdImg.alt = imagepart.alt;
-    createdImg.style.width="30px";
-    createdImg.style.height="30px";
     
     createdLi.appendChild(createdImg);
     gallery.appendChild(createdLi);
