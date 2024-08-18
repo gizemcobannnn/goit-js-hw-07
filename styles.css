@@ -30,3 +30,13 @@ body{
 input#name-input{
     max-width: 30%;
 }
+
+#form-button{
+    background-color: rgb(75, 75, 236);
+    color: white;
+}
+
+.change-color{
+    background-color: rgb(75, 75, 236);
+    color: white;
+}
