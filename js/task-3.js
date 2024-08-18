@@ -1,3 +1,4 @@
+console.log("ODEV-3\n");
 const inputx = document.querySelector("input#name-input");
 const inputText = document.querySelector("span#name-output");
 let name="Anonymous";
@@ -9,9 +10,8 @@ inputx.addEventListener("input",(event)=>{
     }else{
         console.log(`Hoşgeldin, ${name}`);
     }
-
-
 });
+console.log("-----------------------------------------\n");
 
 
 

@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+.gallery li {
+    flex: 1 1 calc(33.333% - 20px); /* Üç sütun düzeni */
+    box-sizing: border-box;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; 
+}

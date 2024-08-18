@@ -1,19 +1,18 @@
-/*
-ul#categories içindeki kategorilerin sayısını ve yani li.item öğelerinin sayısını hesaplar ve konsola yazdırır.
-ul#categories listesindeki her li.item öğesi için, öğenin başlığının metnini ( <h2> etiketi) ve kategorideki öğe sayısını
- (içinde bulunan tüm <li> öğeleri) bulur ve konsola yazdırır.
-*/
+console.log("ODEV-1");
 
 const categoriesLength = document.getElementsByClassName("item").length;
 console.log(`Number of categories: ${categoriesLength}`);
 
-
-const liValue = document.querySelectorAll("h2");
-
+const liofUl =document.querySelectorAll("ul#categories > li")
 let liofcategory = document.getElementsByClassName("item");
-let liofhtwo = document.querySelectorAll("li.item[li]");
 
-for(let valueCat of liValue){
 
-    console.log(`Category: ${valueCat.textContent}`); 
+for( let subList of liofUl){
+    const hText= subList.querySelector('h2').textContent;
+    const elements = subList.querySelectorAll('li').length;
+
+    console.log(`Category: ${hText}`)
+    console.log(`Elements: ${elements}`);
 }
+
+console.log("-----------------------------------------\n");
