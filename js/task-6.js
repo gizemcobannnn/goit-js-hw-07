@@ -3,7 +3,8 @@ const inputBox = document.querySelector("#inputNum");
 const createButton = document.getElementById("data-create");
 const destroyButton =document.getElementById("data-destroy");
 const divpart = document.getElementById("boxes");
-let amount;
+let amount = 0; 
+
 inputBox.addEventListener("input",(event)=>{
   amount= event.target.value ;
   if(amount>0&&amount<100){
@@ -20,21 +21,21 @@ function getRandomHexColor() {
       .toString(16)
       .padStart(6, 0)}`;
   }
-  
+
   function createBoxes(amount){
     divpart.innerHTML="";
+
     for(let i=0;i<amount;i++){
-      console.log(amount)
+      const boxSize = 30 + i * 10;
       const divone = document.createElement("div")
-      divone.style.width = "30px";
-      divone.style.height = "30px";
+      divone.style.width = `${boxSize}px`;
+      divone.style.height = `${boxSize}px`;
       divone.style.backgroundColor = getRandomHexColor();
-      divone.style.margin = "5px"; // Add some spacing between boxes
-      divone.style.display = "inline-block"; // Align boxes horizontally
+      divone.style.margin = "5px"; 
+      divone.style.display = "inline-block"; 
       divpart.appendChild(divone);
-      console.log(`${i} ve${amount} gitis`);
     }
-    inputText="";
+    inputBox.value="";
  
   }
 
