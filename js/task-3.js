@@ -1,12 +1,12 @@
 console.log("ODEV-3\n");
 const inputx = document.querySelector("input#name-input");
-const inputText = document.querySelector("span#name-output");
+const outputText = document.querySelector("span#name-output");
 let name="Anonymous";
 
 inputx.addEventListener("input",(event)=>{
-    inputText.textContent = event.target.value.trim();
-    if(inputText.textContent!==""){
-        console.log(`Hoşgeldin, ${inputText.textContent}`);
+    outputText.textContent = event.target.value.trim();
+    if(outputText.textContent!==""){
+        console.log(`Hoşgeldin, ${outputText.textContent}`);
     }else{
         console.log(`Hoşgeldin, ${name}`);
     }

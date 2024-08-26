@@ -4,8 +4,6 @@ const categoriesLength = document.getElementsByClassName("item").length;
 console.log(`Number of categories: ${categoriesLength}`);
 
 const liofUl =document.querySelectorAll("ul#categories > li")
-let liofcategory = document.getElementsByClassName("item");
-
 
 for( let subList of liofUl){
     const hText= subList.querySelector('h2').textContent;
